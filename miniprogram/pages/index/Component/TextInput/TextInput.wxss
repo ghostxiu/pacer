@@ -1,0 +1,120 @@
+/* pages/index/Component/TextInput/TextInput.wxss */
+    /*Pacer is a Wechat App what used for pace conversion and step frequency step calculation*/
+    /*The author is Ghostxiu, GitHub address https://github.com/ghostxiu, please keep this statement for reprinting. */
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0rpx;
+  margin-left: 0rpx;
+}
+.content_1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0rpx;
+  margin-left: 0rpx;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+.section{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 25px;
+}
+.input{
+ padding-left: 5px;
+ height: 33px; 
+ text-align: center;
+}
+.section__title{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section1{
+    margin-top: 10px;
+}
+.text_run
+{
+  margin-top: 10px;
+  margin-left: 80px;
+  width: 80px;
+}
+.section_min{
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 60px;
+  height: 30px;
+  border: 2px solid red;
+  border-radius: 25px;
+}
+.section_sec{
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 60px;
+  height: 30px;
+  border: 2px solid red;
+  border-radius: 25px;
+}
+.section_rate{
+  margin-left: 20px;
+  width: 60px;
+  height: 30px;
+  border: 2px solid rgb(10, 240, 248);
+  border-radius: 25px;
+}
+.text_stride
+{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_rate
+{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  padding-top: 0;
+}
+.ghost_view
+{
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.submitBtn{
+  margin-top:60rpx;
+  width:100%;
+  height:100rpx;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:32rpx;
+  font-weight:bold;
+  color:#fff !important;
+  background:#ff9537 !important;
+}
+.btn-hover{
+  position: relative;
+  top: 3rpx;
+  box-shadow:0px 0px 8px #999 inset; 
+}
+
+/*Touched by Ghostxiu 2020.5 */

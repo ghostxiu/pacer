@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/Component/TextInput/TextInput",
+    "pages/index/Component/wxpage/about_ghost"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF0F5",
+    "navigationBarTitleText": "Pacer：配速计算器",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fbf9fe"
+  },
+  "sitemapLocation": "sitemap79.json"
+}

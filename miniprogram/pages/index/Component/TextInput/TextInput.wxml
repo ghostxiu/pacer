@@ -1,0 +1,103 @@
+<!--pages/index/Component/TextInput/TextInput.wxml-->
+<view class="viewTitle">
+    <text class="view-Name">1.输入配速或圈速，计算比赛完赛时间</text>
+    <view class="lineView"></view>
+</view>
+
+<view class="content_rate">
+  <view class="text_stride">
+  <text>每公里配速</text>
+  </view>
+  <view class="section_min">
+      <input class="input" maxlength="2"  bindinput="pace_min" placeholder-style="font-size:15px" type="digit"
+      placeholder="分" value="{{inputMin}}"  auto-focus/>
+  </view>
+  <view class="section_sec">
+      <input class="input" maxlength="2" bindinput="pace_sec" placeholder-style="font-size:15px" type="digit"
+      placeholder="秒" value="{{inputSec}}"  auto-focus/>
+  </view>
+ </view>
+
+<view class="content_rate">
+  <view class="text_stride">
+  <text>400米圈速</text>
+  </view>
+  <view class="section_min">
+      <input class="input" maxlength="4"  bindinput="pace_400m" placeholder-style="font-size:15px" type="digit"
+      placeholder="秒" value="{{inputP400}}"  auto-focus/>
+  </view>
+  <view class="text_stride">
+  <text>秒</text>
+  </view>
+ </view>
+ <!--
+<view class = "content_1">
+  <view class="button" >
+  <button bindtap="cal_racer"> 计算 </button>
+  </view>
+  <view class="button" >
+    <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="default"       hover-class="other-button-hover">
+    重置</button>
+  </view>
+</view>
+-->
+
+<view class="section__title">每公里配速：{{inputMin}}分{{inputSec}}秒</view>
+<view class="section__title">时速：{{pacer_km}}公里/小时</view>
+<view class="section__title">5公里完赛时间：{{t_5km[0]}}分{{t_5km[1]}}秒</view>
+<view class="section__title">10公里完赛时间：{{t_10km[0]}}小时{{t_10km[1]}}分{{t_10km[2]}}秒</view>
+<view class="section__title">半马完赛时间：{{t_half[0]}}小时{{t_half[1]}}分{{t_half[2]}}秒</view>
+<view class="section__title">全马完赛时间：{{t_mara[0]}}小时{{t_mara[1]}}分{{t_mara[2]}}秒</view>
+ <!--
+<view class="section">
+    <input class="input" bindinput="bindKeyInput" placeholder="输入同步到view中"/>
+</view>
+<view class="section">
+    <input class="input" placeholder="此处只有在点击下方按钮时才聚焦" focus="{{focus}}" />
+</view>
+<view class="section1">
+    <button bindtap="bindButtonTap">使得输入框获取焦点</button>
+</view>
+-->
+ <!--*Pacer is a Wechat App what used for pace conversion and step frequency step calculation*
+    *The author is Ghostxiu, GitHub address https://github.com/ghostxiu, please keep this statement for reprinting. *-->
+<view class="viewTitle">
+    <text class="view-Name">2.输入配速后，输入步频/步幅计算另一个</text>
+    <view class="lineView"></view>
+</view>
+
+
+<view style="width:100%;bottom:0;position:fixed;background:gray;">
+ <official-account style=""></official-account>
+</view>
+
+<view class="content_rate">
+  <view class="text_stride">
+  <text>步频</text>
+  </view>
+  <view class="section_rate">
+      <input class="input" maxlength="3" id = "meter" bindinput="input_rate_min" placeholder-style="font-size:15px" type="digit"
+      value="{{inputRate}}" auto-focus/>
+  </view>
+  <view class="text_stride">
+  <text>次/分</text>
+  </view>
+</view>
+
+<view class="content_rate">
+  <view class="text_stride">
+  <text>步幅</text>
+  </view>
+  <view class="section_rate">
+      <input class="input" maxlength="5" id="rate" bindinput="input_rate_meter" placeholder-style="font-size:15px" type="digit" 
+      value="{{inputMeter}}"  auto-focus/>
+  </view>
+  <view class="text_stride">
+  <text>　米　</text>
+  </view>
+</view>
+
+
+
+<button bindtap="about_ghost" hover-class="btn-hover" class="submitBtn">关于幽灵</button>
+ <!--*Touched By Ghostxiu 2020.5*-->
